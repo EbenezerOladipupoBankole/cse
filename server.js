@@ -1,21 +1,5 @@
-// const express = require('express'); 
-// const router = express.Router();  
-
-
-// //Static  routes
-// // Set up Public folder / subfolder for static files
-// app.use(express.static('public')); 
-// app.use('/css', express.static(__dirname + 'public/css')); 
-// app.use('/js', express.static(__dirname + 'public/js')); 
-// app.use('/img', express.static(__dirname + 'public/imgaes'));
-
-// module.exports = router; 
-
-// // Index route
-// app.get("/", function(req, res) {
-//   res.render("index", { title: "Home"})
-// })
-
+/* Required External Modules */
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
