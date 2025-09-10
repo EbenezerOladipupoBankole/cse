@@ -27,9 +27,6 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Set up Public folder / subfolder for static files
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/css', express.static(path.join(__dirname, 'public/css')));
-app.use('/js', express.static(path.join(__dirname, 'public/js')));
-app.use('/img', express.static(path.join(__dirname, 'public/images')));
 
 // Express EJS Layouts
 app.use(expressLayouts);
@@ -45,6 +42,3 @@ const PORT = process.env.PORT || 5500;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
-
-
-
